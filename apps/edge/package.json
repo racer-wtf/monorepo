@@ -1,0 +1,21 @@
+{
+  "name": "edge",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts --show-interactive-dev-session false",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "start": "pnpm dev"
+  },
+  "dependencies": {
+    "hono": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "wrangler": "^3.56.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
