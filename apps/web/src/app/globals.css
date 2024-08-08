@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  color: black;
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    color: white;
+    background-color: black;
+  }
+}
+
+.ju367va a,
+.ju367va button,
+.ju367va a:hover,
+.ju367va button:hover {
+  transition: opacity 0.05s ease-in-out;
+  transform: none !important;
+}
+
+.ju367va a:hover,
+.ju367va button:hover {
+  opacity: 0.8 !important;
+}
+
+a {
+  color: theme("colors.gray.400");
+
+  @media (prefers-color-scheme: light) {
+    color: theme("colors.gray.600");
+  }
+
+  &:hover {
+    color: theme("colors.gray.300");
+
+    @media (prefers-color-scheme: light) {
+      color: theme("colors.gray.700");
+    }
+  }
+}

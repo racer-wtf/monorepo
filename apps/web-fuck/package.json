@@ -1,0 +1,45 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --max-warnings 0",
+    "analyze": "ANALYZE=true pnpm build"
+  },
+  "dependencies": {
+    "@repo/database": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@sentry/nextjs": "^8.2.1",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "@vercel/functions": "^1.0.2",
+    "next": "^14.2.3",
+    "next-themes": "^0.3.0",
+    "posthog-js": "^1.131.4",
+    "posthog-node": "^4.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.3.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.3",
+    "@next/eslint-plugin-next": "^14.2.3",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^9.2.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "4.0.0-alpha.15",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

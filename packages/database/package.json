@@ -1,0 +1,30 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "dev": "turso dev --db-file local.db"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.12.12",
+    "drizzle-kit": "^0.21.2",
+    "eslint": "^9.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.6.0",
+    "drizzle-orm": "^0.30.10",
+    "nanoid": "^5.0.7"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}
